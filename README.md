@@ -33,9 +33,9 @@
 
 ## &#10240; Schemas &#10240; &#123; &#34; &#34; &#58; &#34; &#34; &#125;
 
-- __Company__
+- __Company Schema__
 ```json
-COMPANY_SCHEMA = {
+{
     "type" : "object",
     "properties" : {
         "first_name" : {"type" : "string"},
@@ -55,9 +55,9 @@ COMPANY_SCHEMA = {
     ]
 }
 ```
-- __Employee__
+- __Employee Schema__
 ```json
-EMPLOYEE_SCHEMA = {
+{
     "type" : "object",
     "properties" : {
         "first_name" : {"type" : "string"},
@@ -73,9 +73,9 @@ EMPLOYEE_SCHEMA = {
     ]
 }
 ```
-- __Calendar__
+- __Calendar Schema__
 ```json
-DAY_REF = {
+{
     "type" : "object",
     "properties": {
         "hours": {"type" : "number"},
@@ -88,7 +88,7 @@ DAY_REF = {
         "location",
     ]
 }
-CALENDAR_SCHEMA = {
+{
     "type" : "object",
     "properties" : {
         "sunday" : DAY_REF,
@@ -111,9 +111,9 @@ CALENDAR_SCHEMA = {
 }
 ```
 
-- __Change Password__
+- __Change Password Schema__
 ```json
-CHANGE_PWD_SCHEMA = {
+{
     "type" : "object",
     "properties" : {
         "password" : {"type" : "string"}
