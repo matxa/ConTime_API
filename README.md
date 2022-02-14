@@ -73,6 +73,23 @@
     ]
 }
 ```
+- __Day Schema__
+```json
+{
+    "type": "object",
+    "properties": {
+        "hours": {"type": "number"},
+        "description": {"type": "string"},
+        "location": {"type": "string"},
+    },
+    "required": [
+        "hours",
+        "description",
+        "location",
+    ]
+}
+```
+
 - __Calendar Schema__
 ```json
 {
@@ -91,13 +108,13 @@
 {
     "type" : "object",
     "properties" : {
-        "sunday" : DAY_REF,
-        "monday" : DAY_REF,
-        "tuesday" : DAY_REF,
-        "wednesday" : DAY_REF,
-        "thursday" : DAY_REF,
-        "friday" : DAY_REF,
-        "saturday" : DAY_REF,
+        "sunday" : "reference the day schema",
+        "monday" : "reference the day schema",
+        "tuesday" : "reference the day schema",
+        "wednesday" : "reference the day schema",
+        "thursday" : "reference the day schema",
+        "friday" : "reference the day schema",
+        "saturday" : "reference the day schema",
     },
     "required": [
         "sunday",
